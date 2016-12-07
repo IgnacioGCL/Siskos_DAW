@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@font-face {
+  font-family: siskos;
+  src: url("../lib/fonts/Candara.ttf"); }
+/*------------------Barra de navegación------------------*/
+nav {
+  background-color: #fecc00 !important;
+  height: 70px !important; }
+
+.siskos-logo {
+  height: 60px;
+  margin-left: 70px; }
+
+.nav-wrapper ul li {
+  border-radius: 20px !important;
+  background-color: #ffffff !important;
+  color: #fecc00; }
+
+ul li {
+  margin-top: 15px;
+  margin-right: 20px; }
+  ul li p {
+    margin: 0;
+    float: inherit; }
+
+.div-option {
+  height: 36px;
+  width: 36px;
+  margin-right: 0px;
+  float: left; }
+
+.icono-silueta {
+  height: 20px;
+  margin-top: 6px; }
+
+/*------------------Body------------------*/
+.myContainer {
+  background: url("../img/serigraphy/serigrafia.png");
+  background-size: cover;
+  width: 100%;
+  height: 700px; }
+
+.serigraphy-text-container {
+  background-color: rgba(255, 255, 255, 0.6); }
+  .serigraphy-text-container p {
+    font-family: "siskos";
+    margin: 0; }
+
+.serigraphy-subtitle {
+  width: 100%;
+  background-color: #fecc00;
+  border-radius: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: -45px; }
+
+.serigraphy-title-wrapper-1 {
+  margin-top: -40px; }
+
+.serigraphy-title-1 {
+  font-size: 2em; }
+
+.serigraphy-title-2 {
+  font-size: 9em; }
+
+.serigraphy-text {
+  font-size: 2em;
+  margin-top: 15px; }
+
+.serigraphy-prev-med-and-up {
+  min-height: 569px !important;
+  position: relative; }
+  .serigraphy-prev-med-and-up a {
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px !important; }
+  .serigraphy-prev-med-and-up .btn {
+    background-color: #fecc00 !important; }
+
+.serigraphy-prev-small a {
+  bottom: 0;
+  border-radius: 20px !important; }
+.serigraphy-prev-small .btn {
+  background-color: #fecc00 !important; }
+
+/*------------------Footer------------------*/
+footer {
+  margin-top: 0 !important;
+  background-color: #fecc00 !important; }
+
+.more-pages {
+  text-align: center;
+  width: 100%; }
+
+.page {
+  color: #ffffff;
+  display: inline-block;
+  margin-right: 10%;
+  margin-bottom: 10px; }
+
+.logos {
+  text-align: center;
+  width: 100%; }
+
+.logo {
+  display: inline-block;
+  margin-right: 10%;
+  margin-bottom: 10px; }
+
+.logo-facebook {
+  height: 30px;
+  width: 27px;
+  color: #fecc00;
+  margin-top: 12px; }
+
+.logo-youtube {
+  height: 30px;
+  width: 27px;
+  color: #fecc00;
+  margin-top: 12px; }
+
+.logo-pinterest {
+  height: 30px;
+  width: 27px;
+  color: #fecc00;
+  margin-top: 12px; }
+
+.address-1 {
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: #ffffff; }
+  .address-1 a {
+    text-decoration: none;
+    color: #ffffff; }
+
+.address-2 {
+  margin: 10px 0;
+  text-align: center;
+  color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
