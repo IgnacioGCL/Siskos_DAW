@@ -1,0 +1,166 @@
+$azulM:#2308d0;
+$azulS:#04c5da;
+$azulIcon:#0c1d87;
+$lemon:#AAF200;
+
+@mixin bcolor($color){
+  background-color: $color !important;
+}
+
+.preloader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body{
+  width: 100%;
+  padding: 0;
+  margin:0;
+ height: 100%;
+}
+
+nav{
+  @include bcolor($azulS);
+  height: 70px !important;
+}
+
+.siskos-logo{
+  height: 60px;
+  margin-left: 70px;
+}
+
+.nav-wrapper{
+  ul{
+    li{
+      border-radius: 5px !important;
+      @include bcolor(#ffffff);
+      color: $azulS;
+      margin-top: 15px;
+      margin-right: 20px;
+      p{
+        margin: 0;
+        float: inherit;
+      }
+    }
+  }
+}
+
+.div-option{
+  height: 36px;
+  width: 36px;
+  margin-right: 0px;
+  float: left;
+}
+
+.icono-silueta{
+  height: 20px;
+  margin-top: 6px;
+  color: $azulS !important;
+}
+
+#content{
+  width: 100%;
+  margin-top: 4px;
+  background-image: url(../../img/index/fondo_index.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 0;
+  #panel-servicios{
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    ul{
+      li{
+        cursor:pointer;
+        margin-right: 10px;
+        &:hover{
+          cursor:pointer;
+        }
+        p{
+          color: white;
+          background-color: $azulIcon;
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          padding-top: 30px;
+          img{
+            width: 40px;
+            margin-top: 8px;
+          }
+          .hvr-radial-out:before{
+            background-color: white;
+            color: $azulIcon;
+          }
+        }
+
+      }
+    }
+  }
+  #panel-promociones{
+    cursor:pointer;
+    text-align: justify;
+    background-color: rgba(0,51,102,0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 200px;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    &:hover{
+      -webkit-transform: scale(1.20);
+      -moz-transform: scale(1.20);
+      -o-transform: scale(1.20);
+      transform: scale(1.20);
+
+    }
+    h2{
+      font-size: 18px;
+      color:white;
+    }
+    p{
+      color:$lemon;
+      img{
+        width: 250px;
+        position: relative;
+        float: right;
+      }
+    }
+
+  }
+}
+footer{
+  margin-top: 0 !important;
+  @include bcolor($azulM);
+  height: 100%;
+  box-sizing: border-box;
+  .container{
+
+    li{
+      text-align: center;
+      cursor:pointer;
+      img{
+        width: 32px;
+
+      }
+    }
+  }
+  border-top:2px solid white;
+  color: white;
+  width: 100%;
+}
+
+.line-white{
+  background-color: white;
+  height: 1px;
+}

@@ -1,0 +1,123 @@
+.preloader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+nav {
+  background-color: #04c5da !important;
+  height: 70px !important; }
+
+.siskos-logo {
+  height: 60px;
+  margin-left: 70px; }
+
+.nav-wrapper ul li {
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  color: #04c5da;
+  margin-top: 15px;
+  margin-right: 20px; }
+  .nav-wrapper ul li p {
+    margin: 0;
+    float: inherit; }
+
+.div-option {
+  height: 36px;
+  width: 36px;
+  margin-right: 0px;
+  float: left; }
+
+.icono-silueta {
+  height: 20px;
+  margin-top: 6px;
+  color: #04c5da !important; }
+
+#content {
+  width: 100%;
+  margin-top: 4px;
+  background-image: url(../../img/index/fondo_index.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 0; }
+  #content #panel-servicios {
+    padding-top: 80px;
+    width: 100%;
+    height: 100%; }
+    #content #panel-servicios ul li {
+      cursor: pointer;
+      margin-right: 10px; }
+      #content #panel-servicios ul li:hover {
+        cursor: pointer; }
+      #content #panel-servicios ul li p {
+        color: white;
+        background-color: #0c1d87;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        padding-top: 30px; }
+        #content #panel-servicios ul li p img {
+          width: 40px;
+          margin-top: 8px; }
+        #content #panel-servicios ul li p .hvr-radial-out:before {
+          background-color: white;
+          color: #0c1d87; }
+  #content #panel-promociones {
+    cursor: pointer;
+    text-align: justify;
+    background-color: rgba(0, 51, 102, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 200px;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    transition: transform 0.5s ease; }
+    #content #panel-promociones:hover {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+    #content #panel-promociones h2 {
+      font-size: 18px;
+      color: white; }
+    #content #panel-promociones p {
+      color: #AAF200; }
+      #content #panel-promociones p img {
+        width: 250px;
+        position: relative;
+        float: right; }
+
+footer {
+  margin-top: 0 !important;
+  background-color: #2308d0 !important;
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  color: white;
+  width: 100%; }
+  footer .container li {
+    text-align: center;
+    cursor: pointer; }
+    footer .container li img {
+      width: 32px; }
+
+.line-white {
+  background-color: white;
+  height: 1px; }
+
+/*# sourceMappingURL=style_index.css.map */

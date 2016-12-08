@@ -1,104 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="lib/materialize/materialize.css">
+    <title>Serigrafía</title>
+    <link rel="stylesheet" href="assets/css/style_serigraphy.css">
+    <link rel="stylesheet" href="assets/css/materialize.min.css">
 </head>
 <body>
-<!--Barra de navegación-->
-<nav class="nav-bar-serigraphy">
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
-        <ul class="right">
-            <li class="waves-effect waves-yellow dropdown-button btn" data-beloworigin="true" data-activates='dropdown-1'><div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div> <p>Servicio</p></li>
-            <li class="waves-effect waves-yellow btn"><div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div> <p>Crear cuenta</p></li>
-            <li class="waves-effect waves-yellow btn"><div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div> <p>Login</p></li>
-            <li class="waves-effect waves-yellow btn"><div class="div-option"><img class="icono-silueta" src="img/serigraphy/cart.png"></div> <p>Carrito</p></li>
-        </ul>
-
-        <ul id="dropdown-1" class="dropdown-content">
-            <li><input type="text"></li>
-            <li><input type="text"></li>
-        </ul>
-    </div>
-</nav>
-<!--Fin barra de navegación-->
-
-<div class="myContainer">
-    <div class="row">
-        <!--En pantallas medias o superiores-->
-        <div class="col l8 m8 s12 serigraphy-prev-med-and-up hide-on-small-and-down">
-            <a class="btn waves-effect waves-light">Personalice su diseño</a>
+<!--Preloader -->
+<div class="preloader-background">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
         </div>
-        <div class="col l4 m4 s12 serigraphy-text-container hide-on-small-and-down">
-            <div class="serigraphy-title-wrapper"><p class="serigraphy-title-1">Serigrafía</p></div>
-            <div class="serigraphy-title-wrapper-1"><p class="serigraphy-title-2">Siskos</p></div>
-            <div class="serigraphy-subtitle"><p>serigrafía</p></div>
-            <div class="serigraphy-text"><p>Adaptación de su diseño para poder ser impreso sobre prendas textiles o
-                cualquier otra superficie plana. Blanco, negro y/o color. Diferentes tipos de tintas</p></div>
-        </div>
-        <!--Fin pantallas medias o superiores-->
-
-        <!--En pantallas pequeñas o inferiores-->
-        <div class="col l4 m4 s12 serigraphy-text-container hide-on-med-and-up">
-            <div class="serigraphy-title-wrapper"><p class="serigraphy-title-1">Serigrafía</p></div>
-            <div class="serigraphy-title-wrapper-1"><p class="serigraphy-title-2">Siskos</p></div>
-            <div class="serigraphy-subtitle"><p>serigrafía</p></div>
-            <div class="serigraphy-text"><p>Adaptación de su diseño para poder ser impreso sobre prendas textiles o
-                cualquier otra superficie plana. Blanco, negro y/o color. Diferentes tipos de tintas</p></div>
-        </div>
-        <div class="col l8 m8 s12 serigraphy-prev-small hide-on-med-and-up">
-            <a class="waves-effect waves-light btn yellow">Personalice su diseño</a>
-        </div>
-        <!--Fin pantallas pequeñas o inferiores-->
     </div>
 </div>
 
+<!--Barra de navegación-->
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
+            <ul class="right">
+                <li class="waves-effect waves-yellow dropdown-button btn" data-beloworigin="true"
+                    data-activates='dropdown-1'>
+                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
+                    <p>Servicio</p></li>
+                <li class="waves-effect waves-yellow btn">
+                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
+                    <p>Crear cuenta</p></li>
+                <li class="waves-effect waves-yellow btn">
+                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
+                    <p>Login</p></li>
+                <li class="waves-effect waves-yellow btn">
+                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/cart.png"></div>
+                    <p>Carrito</p></li>
+            </ul>
+
+            <ul id="dropdown-1" class="dropdown-content">
+                <li><input type="text"></li>
+                <li><input type="text"></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--Fin barra de navegación-->
+<section id="content">
+    <div class="myContainer">
+        <div class="row">
+            <!--En pantallas medias o superiores-->
+            <div class="col l8 m8 s12 serigraphy-prev-med-and-up hide-on-small-and-down">
+                <a class="btn waves-effect waves-light">Personalice su diseño</a>
+            </div>
+            <div class="col l4 m4 s12 serigraphy-text-container hide-on-small-and-down">
+                <div class="serigraphy-title-wrapper"><p class="serigraphy-title-1">Serigrafía</p></div>
+                <div class="serigraphy-title-wrapper-1"><p class="serigraphy-title-2">Siskos</p></div>
+                <div class="serigraphy-subtitle"><p>serigrafía</p></div>
+                <div class="serigraphy-text"><p>Adaptación de su diseño para poder ser impreso sobre prendas textiles o
+                    cualquier otra superficie plana. Blanco, negro y/o color. Diferentes tipos de tintas</p></div>
+            </div>
+            <!--Fin pantallas medias o superiores-->
+
+            <!--En pantallas pequeñas o inferiores-->
+            <div class="col l4 m4 s12 serigraphy-text-container hide-on-med-and-up">
+                <div class="serigraphy-title-wrapper"><p class="serigraphy-title-1">Serigrafía</p></div>
+                <div class="serigraphy-title-wrapper-1"><p class="serigraphy-title-2">Siskos</p></div>
+                <div class="serigraphy-subtitle"><p>serigrafía</p></div>
+                <div class="serigraphy-text"><p>Adaptación de su diseño para poder ser impreso sobre prendas textiles o
+                    cualquier otra superficie plana. Blanco, negro y/o color. Diferentes tipos de tintas</p></div>
+            </div>
+            <div class="col l8 m8 s12 serigraphy-prev-small hide-on-med-and-up">
+                <a class="waves-effect waves-light btn yellow">Personalice su diseño</a>
+            </div>
+            <!--Fin pantallas pequeñas o inferiores-->
+        </div>
+    </div>
+</section>
+
 <!--Footer-->
+
 <footer class="page-footer">
-    <div class="more-pages">
-        <a class="page" style="margin-left: 10%">Contacto</a>
-        <a class="page">Nuestro Trabajo</a>
-        <a class="page">Compañía</a>
-    </div>
-    <div class="logos">
-        <div class="logo" style="margin-left: 10%">
-            <a class="btn-floating btn-large waves-effect waves-yellow white">
-                <img class="logo-facebook" src="img/serigraphy/facebook-logo.png">
-            </a>
+    <div class="container">
+        <ul id="enlaces" class="row ">
+            <li class="col s2 offset-s3">CONTACTO</li>
+            <li class="col s2">NUESTRO TRABAJO</li>
+            <li class="col s2">COMPAÑIA</li>
+        </ul>
+        <ul id="logos-social" class="row">
+            <li class="col s2 offset-s3 "><img src="img/index/facebook-logo.png" alt=""></li>
+            <li class="col s2 "><img src="img/index/youtube-logo.png" alt=""></li>
+            <li class="col s2"><img src="img/index/pinterest-logo.png" alt=""></li>
+        </ul>
+        <div id="phone-contact" class="row center-align">
+            <p>678555555</p>
         </div>
-        <div class="logo">
-            <a class="btn-floating btn-large waves-effect waves-yellow white">
-                <img class="logo-youtube" src="img/serigraphy/youtube.png">
-            </a>
+        <div id="email-contact" class="row center-align">
+            <p>siskoscorreo@gmail.com</p>
         </div>
-        <div class="logo">
-            <a class="btn-floating btn-large waves-effect waves-yellow white">
-                <img class="logo-pinterest" src="img/serigraphy/pinterest-logo.png">
-            </a>
+        <div class="line-white row col s8 offset-s4">
+            <hr>
         </div>
-    </div>
-    <div class="address-1">
-        <div>
-            928 75 89 60
-            <br>
-            e-mail: <a href="mailto:info@siskos.com">info@siskos.com</a>
+        <div id="address-contact" class="row center-align">
+            <p>C/Pérez Nº2, Botswana</p>
         </div>
-    </div>
-    <div class="address-2">
-        C/Pérez Nº2, Las Palmas de Gran Canaria
     </div>
     <div class="footer-copyright">
         <div class="container center">
-            © Siskos 2016 Todos los derechos reservados
+            © Siskos 2016 todos los derechos reservados
         </div>
     </div>
+
 </footer>
+
 <!--Fin footer-->
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="assets/js/script_serigraphy.js"></script>
 </body>
 </html>
