@@ -1,5 +1,7 @@
 $serigraphy: #fecc00;
-$socials: facebook youtube pinterest;
+$upload_file: #5c201f;
+$count: 0;
+$colors: (purple,1) (blue,2) (yellow,3) (orange,4) (red,5) (green,6) (green,7) (black,8) (white,9) (grey,10) (pink,11) (brown,12) (violet,13) (blue,14);
 
 @mixin bcolor($color){
     background-color: $color !important;
@@ -112,17 +114,111 @@ nav{
   margin-top: 15px;
 }
 
+/*------------------Previsualizador------------------*/
+
 .serigraphy-prev-med-and-up{
-  min-height: 569px !important;
+  height: 100%;
+  width: 100%;
   position: relative;
+  @include bcolor(rgba(254,204,0,0.5));
   a{
     position: absolute;
     bottom: 0;
     border-radius: 20px !important;
   }
+  p{
+    color: #ffffff;
+    font-size: 2em;
+    font-family: siskos;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .btn{
     @include bcolor($serigraphy);
   }
+}
+
+.prev-up{
+  @include bcolor($serigraphy);
+  padding-top: 6px;
+  border-radius: 10px;
+  .btn{
+    @include bcolor($upload_file);
+    border-radius: 2px !important;
+  }
+  a{
+    position: inherit;
+  }
+  p{
+    font-size: 1em;
+    font-family: siskos;
+    margin-top: 0;
+    color: $upload_file;
+  }
+}
+
+.prev-down{
+  @include bcolor($serigraphy);
+  border-radius: 10px;
+  p{
+    color: $upload_file;
+    font-size: 1em;
+  }
+}
+
+.shirt{
+  width: 100%;
+}
+
+.location-text{
+  font-size: 2em !important;
+}
+
+.vertical-align{
+  margin-top: 2%;
+}
+.vertical-align-button{
+  margin-top: 3%;
+}
+
+
+.div-image{
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff;
+  border-radius: 2px;
+  height: 90px;
+  width: 100%;
+}
+
+@each $color, $number in $colors{
+  .choose-color-#{$number}{
+    @include bcolor($color);
+    height: 20px;
+    width: 20px;
+    border: solid 1px #000000;
+    margin-right: 5px;
+  }
+}
+
+.prev-colors{
+  margin-bottom: 2px !important;
+}
+
+[type="checkbox"]+label:before{
+  @include bcolor(#ffffff);
+}
+
+[type="checkbox"]:checked+label:before{
+  @include bcolor(rgba(0,0,0,0));
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important;
+}
+
+
+.no-margin-bottom{
+  margin-bottom: 0 !important;
 }
 
 .serigraphy-prev-small{
