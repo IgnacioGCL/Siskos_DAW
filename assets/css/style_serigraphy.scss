@@ -1,10 +1,10 @@
 $serigraphy: #fecc00;
 $upload_file: #5c201f;
 $count: 0;
-$colors: (purple,1) (blue,2) (yellow,3) (orange,4) (red,5) (green,6) (green,7) (black,8) (white,9) (grey,10) (pink,11) (brown,12) (violet,13) (blue,14);
+$colors: (purple, 1) (blue, 2) (yellow, 3) (orange, 4) (red, 5) (green, 6) (aqua, 7) (black, 8) (white, 9) (grey, 10) (pink, 11) (brown, 12) (violet, 13) (blue, 14);
 
-@mixin bcolor($color){
-    background-color: $color !important;
+@mixin bcolor($color) {
+  background-color: $color !important;
 }
 
 @font-face {
@@ -29,25 +29,25 @@ $colors: (purple,1) (blue,2) (yellow,3) (orange,4) (red,5) (green,6) (green,7) (
 
 /*------------------Barra de navegación------------------*/
 
-nav{
+nav {
   @include bcolor($serigraphy);
   height: 70px !important;
 }
 
-.siskos-logo{
+.siskos-logo {
   height: 60px;
   margin-left: 70px;
 }
 
-.nav-wrapper{
-  ul{
-    li{
+.nav-wrapper {
+  ul {
+    li {
       border-radius: 5px !important;
       @include bcolor(#ffffff);
       color: $serigraphy;
       margin-top: 15px;
       margin-right: 20px;
-      p{
+      p {
         margin: 0;
         float: inherit;
       }
@@ -55,40 +55,39 @@ nav{
   }
 }
 
-.div-option{
+.div-option {
   height: 36px;
   width: 36px;
   margin-right: 0px;
   float: left;
 }
 
-.icono-silueta{
+.icono-silueta {
   height: 20px;
   margin-top: 6px;
 }
 
 /*------------------Body------------------*/
 
-
-.myContainer{
+.myContainer {
   background: url("../../img/serigraphy/serigrafia.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 
-.serigraphy-text-container{
-  background-color: rgba(255,255,255,0.6);
-  p{
+.serigraphy-text-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  p {
     font-family: "siskos";
     margin: 0;
   }
 }
 
-.serigraphy-subtitle{
+.serigraphy-subtitle {
   width: 100%;
   background-color: $serigraphy;
   border-radius: 20px;
@@ -98,58 +97,59 @@ nav{
   margin-top: -45px;
 }
 
-.serigraphy-title-wrapper-1{
+.serigraphy-title-wrapper-1 {
   margin-top: -40px;
 }
 
-.serigraphy-title-1{
+.serigraphy-title-1 {
   font-size: 2em;
 }
-.serigraphy-title-2{
+
+.serigraphy-title-2 {
   font-size: 9em;
 }
 
-.serigraphy-text{
+.serigraphy-text {
   font-size: 2em;
   margin-top: 15px;
 }
 
 /*------------------Previsualizador------------------*/
 
-.serigraphy-prev-med-and-up{
+.serigraphy-prev-med-and-up {
   height: 100%;
   width: 100%;
   position: relative;
-  @include bcolor(rgba(254,204,0,0.5));
-  a{
+  @include bcolor(rgba(254, 204, 0, 0.5));
+  a {
     position: absolute;
     bottom: 0;
     border-radius: 20px !important;
   }
-  p{
+  p {
     color: #ffffff;
     font-size: 2em;
     font-family: siskos;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .btn{
+  .btn {
     @include bcolor($serigraphy);
   }
 }
 
-.prev-up{
+.prev-up {
   @include bcolor($serigraphy);
   padding-top: 6px;
   border-radius: 10px;
-  .btn{
+  .btn {
     @include bcolor($upload_file);
     border-radius: 2px !important;
   }
-  a{
+  a {
     position: inherit;
   }
-  p{
+  p {
     font-size: 1em;
     font-family: siskos;
     margin-top: 0;
@@ -157,32 +157,32 @@ nav{
   }
 }
 
-.prev-down{
+.prev-down {
   @include bcolor($serigraphy);
   border-radius: 10px;
-  p{
+  p {
     color: $upload_file;
     font-size: 1em;
   }
 }
 
-.shirt{
+.shirt {
   width: 100%;
 }
 
-.location-text{
+.location-text {
   font-size: 2em !important;
 }
 
-.vertical-align{
+.vertical-align {
   margin-top: 2%;
 }
-.vertical-align-button{
+
+.vertical-align-button {
   margin-top: 3%;
 }
 
-
-.div-image{
+.div-image {
   background-image: url('');
   background-size: cover;
   background-position: center;
@@ -192,8 +192,8 @@ nav{
   width: 100%;
 }
 
-@each $color, $number in $colors{
-  .choose-color-#{$number}{
+@each $color, $number in $colors {
+  .choose-color-#{$number} {
     @include bcolor($color);
     height: 20px;
     width: 20px;
@@ -202,60 +202,99 @@ nav{
   }
 }
 
-.prev-colors{
+.custom-button-div{
+  min-height: 700px;
+}
+.custom-button{
+  @include bcolor($serigraphy);
+  color: #ffffff;
+  border-radius: 20px;
+  margin-top: 60%;
+}
+
+.prev-colors {
   margin-bottom: 2px !important;
 }
 
-[type="checkbox"]+label:before{
+[type="checkbox"] + label:before {
   @include bcolor(#ffffff);
 }
 
-[type="checkbox"]:checked+label:before{
-  @include bcolor(rgba(0,0,0,0));
+[type="checkbox"]:checked + label:before {
+  @include bcolor(rgba(0, 0, 0, 0));
   border-right: 2px solid #ffffff !important;
   border-bottom: 2px solid #ffffff !important;
 }
 
+.image-data-div {
+  border-bottom: solid 1px $upload_file;
+  p {
+    text-align: center;
+  }
+}
 
-.no-margin-bottom{
+.no-margin-bottom {
   margin-bottom: 0 !important;
 }
 
-.serigraphy-prev-small{
-  a{
+.done-button {
+  .btn {
+    @include bcolor($upload_file);
+    border-radius: 2px !important;
+    position: relative;
+    margin-top: 5%;
+  }
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: $upload_file !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid $upload_file !important;
+  box-shadow: 0 1px 0 0 $upload_file !important;
+}
+
+textarea{
+  @include bcolor(#ffffff);
+  resize: none;
+}
+
+.serigraphy-prev-small {
+  a {
     bottom: 0;
     border-radius: 20px !important;
   }
-  .btn{
+  .btn {
     @include bcolor($serigraphy);
   }
 }
 
 /*------------------Footer------------------*/
 
-
-footer{
+footer {
   margin-top: 0 !important;
   @include bcolor($serigraphy);
   height: 100%;
   box-sizing: border-box;
-  .container{
+  .container {
 
-    li{
+    li {
       text-align: center;
-      cursor:pointer;
-      img{
+      cursor: pointer;
+      img {
         width: 32px;
 
       }
     }
   }
-  border-top:2px solid white;
+  border-top: 2px solid white;
   color: white;
   width: 100%;
 }
 
-.line-white{
+.line-white {
   background-color: white;
   height: 1px;
 }
