@@ -76,7 +76,7 @@ nav {
   font-size: 2em; }
 
 .serigraphy-title-2 {
-  font-size: 9em; }
+  font-size: 7em; }
 
 .serigraphy-text {
   font-size: 2em;
@@ -84,10 +84,12 @@ nav {
 
 /*------------------Previsualizador------------------*/
 .serigraphy-prev-med-and-up {
+  margin-top: 20px;
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: rgba(254, 204, 0, 0.5) !important; }
+  background-color: rgba(254, 204, 0, 0.5) !important;
+  border-radius: 20px; }
   .serigraphy-prev-med-and-up a {
     position: absolute;
     bottom: 0;
@@ -241,6 +243,17 @@ nav {
   width: 20px;
   border: solid 1px #000000;
   margin-right: 5px; }
+
+.frente-with-line {
+  display: inline-block; }
+
+hr {
+  display: inline-block;
+  width: 30%;
+  color: #5c201f;
+  background-color: #5c201f !important;
+  border: none;
+  height: 2px !important; }
 
 .custom-button-div {
   min-height: 700px; }

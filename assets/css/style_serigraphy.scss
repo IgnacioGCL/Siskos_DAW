@@ -106,7 +106,7 @@ nav {
 }
 
 .serigraphy-title-2 {
-  font-size: 9em;
+  font-size: 7em;
 }
 
 .serigraphy-text {
@@ -117,10 +117,12 @@ nav {
 /*------------------Previsualizador------------------*/
 
 .serigraphy-prev-med-and-up {
+  margin-top: 20px;
   height: 100%;
   width: 100%;
   position: relative;
   @include bcolor(rgba(254, 204, 0, 0.5));
+  border-radius: 20px;
   a {
     position: absolute;
     bottom: 0;
@@ -200,6 +202,19 @@ nav {
     border: solid 1px #000000;
     margin-right: 5px;
   }
+}
+
+.frente-with-line{
+  display: inline-block;
+}
+
+hr{
+  display: inline-block;
+  width: 30%;
+  color: $upload_file;
+  @include bcolor($upload_file);
+  border: none;
+  height: 2px !important;
 }
 
 .custom-button-div{
