@@ -1,0 +1,162 @@
+@font-face {
+  font-family: siskos;
+  src: url("../fonts/Candara.ttf"); }
+.preloader-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+nav {
+  background-color: #04c5da !important;
+  height: 70px !important; }
+
+.siskos-logo {
+  height: 60px;
+  margin-left: 70px; }
+
+.nav-wrapper ul li {
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  color: #04c5da;
+  margin-top: 15px;
+  margin-right: 20px; }
+  .nav-wrapper ul li p {
+    margin: 0;
+    float: inherit; }
+
+.div-option {
+  height: 36px;
+  width: 36px;
+  margin-right: 0px;
+  float: left; }
+
+.icono-silueta {
+  height: 20px;
+  margin-top: 6px;
+  color: #04c5da !important; }
+
+#content {
+  width: 100%;
+  margin-top: 4px;
+  background-image: url(../../img/index/fondo_index.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 0; }
+
+footer {
+  margin-top: 0 !important;
+  background-color: #2308d0 !important;
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 2px solid white;
+  color: white;
+  width: 100%; }
+  footer .container li {
+    text-align: center;
+    cursor: pointer; }
+    footer .container li img {
+      width: 32px; }
+
+.line-white {
+  background-color: white;
+  height: 1px; }
+
+.div-promotion-taza {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-image: url("../../img/promotions/taza.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative; }
+
+.div-promotion-boligrafo {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-image: url("../../img/promotions/boligrafo.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative; }
+
+.div-promotion-mechero {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-image: url("../../img/promotions/mechero.png");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  position: relative; }
+
+#content a {
+  font-family: siskos;
+  color: #ffffff;
+  background-color: red !important;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 0; }
+
+.price-promotion-taza {
+  background-color: #8c2420 !important;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 3em;
+  right: 0; }
+
+.hover-content-taza {
+  display: none;
+  text-align: center; }
+  .hover-content-taza p {
+    margin-top: 100%; }
+
+.price-promotion-boligrafo {
+  background-color: #bea413 !important;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 3em;
+  right: 0; }
+
+.hover-content-boligrafo {
+  display: none;
+  text-align: center; }
+  .hover-content-boligrafo p {
+    margin-top: 100%; }
+
+.price-promotion-mechero {
+  background-color: #393185 !important;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 3em;
+  right: 0; }
+
+.hover-content-mechero {
+  display: none;
+  text-align: center; }
+  .hover-content-mechero p {
+    margin-top: 100%; }
+
+/*# sourceMappingURL=style_promotions.css.map */
