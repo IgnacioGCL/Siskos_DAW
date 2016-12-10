@@ -196,17 +196,21 @@
                         <div class="row no-margin-bottom">
                             <div class="col l3">
                                 <p>FRENTE</p>
-                                <img class="shirt" src="img/serigraphy/frontal.png">
+                                <div class="shirt-image-front">
+                                <canvas id="canvas-front"></canvas>
+                                </div>
                             </div>
                             <div class="col l3">
                                 <p>TRASERA</p>
-                                <img class="shirt" src="img/serigraphy/trasera.png">
+                                <div class="shirt-image-back">
+                                <canvas id="canvas-back"></canvas>
+                                </div>
                             </div>
                             <div class="col l6">
                                 <p class="location-text frente-with-line">FRENTE</p>
                                 <hr>
                                 <p>
-                                    <input type="checkbox" id="frente">
+                                    <input type="checkbox" id="frente" checked>
                                     <label for="frente"></label>
                                 </p>
                             </div>
@@ -355,5 +359,6 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
 <script type="text/javascript" src="assets/js/script_serigraphy.js"></script>
+<script type="text/javascript" src="assets/js/fabric.js"></script>
 </body>
 </html>

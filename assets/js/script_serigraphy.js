@@ -7,13 +7,18 @@ document.addEventListener("DOMContentLoaded", function () {
         .delay(1700)
         .fadeOut();
 });
+var file;
+var reader;
+var canvasFront;
+var canvasBack;
 
 $('#upload-file').change(function () {
-    var file = this.files[0];
-    var reader = new FileReader();
+    file = this.files[0];
+    reader = new FileReader();
     reader.onloadend = function () {
         $('.div-image').css('background-image', 'url("' + reader.result + '")');
         $('.div-image').css('background-color', 'rgba(0,0,0,0)');
+        canvas(reader.result, "default");
     }
     if (file) {
         reader.readAsDataURL(file);
@@ -33,3 +38,61 @@ $('.close-button').click(function () {
         $('.custom-button-div').show('slow');
     });
 });
+
+$('#frente').change(function () {
+    if(!($('#frente').prop("checked"))){
+        canvas("nothing","no-front");
+    }else{
+        canvas(reader.result, "front");
+    }
+})
+
+$('#trasera').change(function () {
+    if(!($('#trasera').prop("checked"))){
+        canvas("nothing","no-back");
+    }else{
+        canvas(reader.result, "back");
+    }
+})
+
+function canvas(image, option) {
+
+    switch(option){
+        case "default":
+            canvasFront = this.__canvas = new fabric.Canvas('canvas-front');
+            fabric.Object.prototype.transparentCorners = false;
+
+            fabric.Image.fromURL(image, function(img) {
+                img.scale(0.08);
+                canvasFront.add(img).setActiveObject(img);
+            });
+            break;
+        case "front":
+            canvasFront = this.__canvas = new fabric.Canvas('canvas-front');
+            fabric.Object.prototype.transparentCorners = false;
+
+            fabric.Image.fromURL(image, function(img) {
+                img.scale(0.08);
+                canvasFront.add(img).setActiveObject(img);
+            });
+            break;
+        case "back":
+            canvasBack = this.__canvas = new fabric.Canvas('canvas-back');
+            fabric.Object.prototype.transparentCorners = false;
+
+            fabric.Image.fromURL(image, function(img) {
+                img.scale(0.08);
+                canvasBack.add(img).setActiveObject(img);
+            });
+            break;
+        case "no-front":
+            console.log("No front");
+            canvasFront.clear().renderAll();
+            break;
+        case "no-back":
+            console.log("No back");
+            canvasBack.clear().renderAll();
+            break;
+    }
+
+};
