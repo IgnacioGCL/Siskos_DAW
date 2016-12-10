@@ -155,3 +155,61 @@ footer {
     }
   }
 }
+
+#items-menu{
+  position: absolute;
+  right: 0;
+}
+#login{
+  width: 180px !important;
+}
+.nav-wrapper{
+
+  ul{
+    li{
+      border-radius: 5px !important;
+      @include bcolor(#ffffff);
+      color: $azulS;
+      margin-top: 15px;
+      margin-right: 20px;
+      width: auto;
+      max-width: 250px;
+
+      a{
+        color: $azulS;
+        float: left;
+        &:hover{
+          @include bcolor(white);
+        }
+      }
+      p{
+        margin: 0;
+        float: inherit;
+      }
+      &:hover{
+        @include bcolor(white);
+        height: 100%;
+
+      }
+
+      #dropdown1 , #dropdown2{
+        @include bcolor(white);
+        z-index: 10;
+        -webkit-transition:height 1s ease;
+        -moz-transition:height 1s ease;
+        -o-transition:height 1s ease;
+        transition:height  1s ease;
+        input{
+          border: 1px $azulS solid;
+          border-radius:4px;
+          margin: 1px 0px;
+        }
+        button{
+          @include bcolor($azulS);
+          color: white;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

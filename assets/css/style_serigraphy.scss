@@ -34,6 +34,88 @@ nav {
   height: 70px !important;
 }
 
+#items-menu{
+  position: absolute;
+  right: 0;
+}
+#login{
+  width: 180px !important;
+}
+
+.nav-wrapper{
+
+  ul{
+    li{
+      border-radius: 5px !important;
+      @include bcolor(#ffffff);
+      color: $serigraphy;
+      margin-top: 15px;
+      margin-right: 20px;
+      width: auto;
+      max-width: 250px;
+
+      a{
+        color: $serigraphy;
+        float: left;
+        &:hover{
+          @include bcolor(white);
+        }
+      }
+      p{
+        margin: 0;
+        float: inherit;
+      }
+      &:hover{
+        @include bcolor(white);
+        height: 100%;
+
+      }
+
+      #dropdown1 , #dropdown2{
+        @include bcolor(white);
+        z-index: 10;
+        -webkit-transition:height 1s ease;
+        -moz-transition:height 1s ease;
+        -o-transition:height 1s ease;
+        transition:height  1s ease;
+        input{
+          border: 1px $serigraphy solid;
+          border-radius:4px;
+          margin: 1px 0px;
+        }
+        button{
+          @include bcolor($serigraphy);
+          color: white;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+#dropdown3{
+  margin-top: 40px;
+  li {
+    float: left;
+    width: 100%;
+    border: 1px $serigraphy solid;
+    border-radius: 0px !important;
+    margin-bottom: 10px;
+
+    a{
+      color: $serigraphy;
+      width: 100%;
+      &:hover{
+        color:white;
+        @include bcolor($serigraphy);
+
+      }
+    }
+
+  }
+
+}
+
 .siskos-logo {
   height: 60px;
   margin-left: 70px;
@@ -79,8 +161,17 @@ nav {
   height: 100%;
 }
 
+.close-button{
+  margin-top: 5px;
+  border-radius: 20px;
+  position: inherit !important;
+}
+
 .serigraphy-text-container {
   background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 0 !important;
+  padding-bottom: 20px;
   p {
     font-family: "siskos";
     margin: 0;
@@ -198,9 +289,8 @@ nav {
   .choose-color-#{$number} {
     @include bcolor($color);
     height: 20px;
-    width: 20px;
+    width: 10px;
     border: solid 1px #000000;
-    margin-right: 5px;
   }
 }
 

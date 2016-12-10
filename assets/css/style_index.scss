@@ -24,9 +24,9 @@ body{
   width: 100%;
   padding: 0;
   margin:0;
- height: 100%;
+  height: 100%;
 }
-
+/* START STYLE HEADER "INDEX" "CART" */
 nav{
   @include bcolor($azulS);
   height: 70px !important;
@@ -37,7 +37,15 @@ nav{
   margin-left: 70px;
 }
 
+#items-menu{
+  position: absolute;
+  right: 0;
+}
+#login{
+  width: 180px !important;
+}
 .nav-wrapper{
+
   ul{
     li{
       border-radius: 5px !important;
@@ -45,14 +53,69 @@ nav{
       color: $azulS;
       margin-top: 15px;
       margin-right: 20px;
+      width: auto;
+      max-width: 250px;
+
+      a{
+        color: $azulS;
+        float: left;
+        &:hover{
+          @include bcolor(white);
+        }
+      }
       p{
         margin: 0;
         float: inherit;
       }
+      &:hover{
+        @include bcolor(white);
+        height: 100%;
+
+      }
+
+      #dropdown1 , #dropdown2{
+        @include bcolor(white);
+        z-index: 10;
+        -webkit-transition:height 1s ease;
+        -moz-transition:height 1s ease;
+        -o-transition:height 1s ease;
+        transition:height  1s ease;
+        input{
+          border: 1px $azulS solid;
+          border-radius:4px;
+          margin: 1px 0px;
+        }
+        button{
+          @include bcolor($azulS);
+          color: white;
+          margin-bottom: 8px;
+        }
+      }
     }
   }
 }
+#dropdown3{
+  margin-top: 40px;
+  li {
+    float: left;
+    width: 100%;
+    border: 1px $azulS solid;
+    border-radius: 0px !important;
+    margin-bottom: 10px;
 
+    a{
+      color: $azulS;
+      width: 100%;
+      &:hover{
+        color:white;
+        @include bcolor($azulS);
+
+      }
+    }
+
+  }
+
+}
 .div-option{
   height: 36px;
   width: 36px;
@@ -65,7 +128,8 @@ nav{
   margin-top: 6px;
   color: $azulS !important;
 }
-
+/* END HEADER*/
+/* START STYLE CONTENT "INDEX"  */
 #content{
   width: 100%;
   margin-top: 4px;
@@ -87,6 +151,7 @@ nav{
         &:hover{
           cursor:pointer;
         }
+
         p{
           color: white;
           background-color: $azulIcon;
@@ -103,6 +168,7 @@ nav{
             color: $azulIcon;
           }
         }
+
 
       }
     }
@@ -139,6 +205,8 @@ nav{
 
   }
 }
+/*END STYLE CONTENT INDEX*/
+/* START FOOTER HEADER "INDEX" "CART" */
 footer{
   margin-top: 0 !important;
   @include bcolor($azulM);
@@ -159,8 +227,109 @@ footer{
   color: white;
   width: 100%;
 }
-
+/*END FOOTER*/
 .line-white{
   background-color: white;
   height: 1px;
 }
+
+/* START STYLE CONTENT  "CART" */
+
+#cart-content{
+  width: 100%;
+  margin-top: 4px;
+  background-image: url(../../img/index/fondo_index.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 0;
+  min-height: 700px;
+
+  #title-cart{
+    color: white;
+    margin-left: 10%;
+    padding-top: 15px;
+    font-size: 30px;
+    margin-top: 0;
+  }
+  #cart-products{
+    li{
+      margin-left: 25px;
+      float: left;
+      width: 100%;
+      .img-product{
+        background-color: rgba(255,255,255,0.4);
+        height: 100px;
+        width: 100px;
+      }
+      .description-product{
+        background-color: rgba(255,255,255,0.4);
+        height: 100px;
+        margin-left: 15px;
+      }
+      p{
+        margin: 0;
+        margin-top: 0px;
+        text-align: center;
+        color: white;
+      }
+      .price-product ,  .amount-product{
+        text-align: center;
+        background-color: rgba(255,255,255,0.4);
+        height: 30px;
+        color: black;
+
+      }
+      .amount-price{
+        margin-top: -20px;
+      }
+
+    }
+    .btn-del{
+      float: left;
+      @include bcolor(transparent);
+      box-shadow: none;
+      color: white;
+      border: none;
+      margin-left: 25px;
+      margin-bottom: 20px;
+    }
+
+  }
+  #subtotal-cart{
+    margin-top: -20px;
+    h2{
+      margin: 0px 70px;
+      color: white;
+      font-size: 18px;
+
+    }
+    #panel-subtotal{
+      height: 200px;
+      background-color: rgba(255,255,255,0.4);
+
+      p{
+        text-align: center;
+      }
+      #total{
+        font-size: 38px;
+        margin: 4px;
+      }
+      #total-products{
+        font-size: 20px;
+      }
+      #btn-enviar{
+        height: 20px;
+        margin-top: 50px;
+        line-height: 0px;
+        background-color: white;
+        color:$azulS
+      }
+
+    }
+
+  }
+}
+

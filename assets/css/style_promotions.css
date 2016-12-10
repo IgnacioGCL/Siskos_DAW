@@ -159,4 +159,46 @@ footer {
   .hover-content-mechero p {
     margin-top: 100%; }
 
+#items-menu {
+  position: absolute;
+  right: 0; }
+
+#login {
+  width: 180px !important; }
+
+.nav-wrapper ul li {
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  color: #04c5da;
+  margin-top: 15px;
+  margin-right: 20px;
+  width: auto;
+  max-width: 250px; }
+  .nav-wrapper ul li a {
+    color: #04c5da;
+    float: left; }
+    .nav-wrapper ul li a:hover {
+      background-color: white !important; }
+  .nav-wrapper ul li p {
+    margin: 0;
+    float: inherit; }
+  .nav-wrapper ul li:hover {
+    background-color: white !important;
+    height: 100%; }
+  .nav-wrapper ul li #dropdown1, .nav-wrapper ul li #dropdown2 {
+    background-color: white !important;
+    z-index: 10;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height  1s ease; }
+    .nav-wrapper ul li #dropdown1 input, .nav-wrapper ul li #dropdown2 input {
+      border: 1px #04c5da solid;
+      border-radius: 4px;
+      margin: 1px 0px; }
+    .nav-wrapper ul li #dropdown1 button, .nav-wrapper ul li #dropdown2 button {
+      background-color: #04c5da !important;
+      color: white;
+      margin-bottom: 8px; }
+
 /*# sourceMappingURL=style_promotions.css.map */

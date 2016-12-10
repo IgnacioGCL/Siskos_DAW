@@ -30,22 +30,31 @@
 <header>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
-            <ul class="right">
-                <li class="waves-effect waves-teal btn">
+            <a href="index.html" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
+            <ul id="items-menu" class="right">
+                <li id="register" class="waves-effect waves-teal btn" >
                     <div class="div-option"><img class="icono-silueta" src="img/index/silueta.png"></div>
-                    <p>Crear cuenta</p></li>
-                <li class="waves-effect waves-light btn">
+                    <p>Crear cuenta</p><br>
+                    <ul id="dropdown1">
+                        <input type="text" placeholder="Nombre" id="nombre">
+                        <input type="text" placeholder="Apellidos" id="apellidos">
+                        <input type="email" placeholder="Correo" id="correo-registro">
+                        <input type="password" placeholder="Contraseña" id="password-registro">
+                        <button  id="button-register"  class="btn center-align">Registrar</button>
+                    </ul>
+                </li>
+                <li id="login" class="waves-effect waves-light btn">
                     <div class="div-option"><img class="icono-silueta" src="img/index/silueta.png"></div>
-                    <p>Login</p></li>
+                    <p>Login</p><br>
+                    <ul id="dropdown2" >
+                        <input type="email" placeholder="Correo" id="correo-login">
+                        <input type="password" placeholder="Contraseña" id="password-login">
+                        <button  id="button-login"  class="btn center-align">Entrar</button>
+                    </ul>
+                </li>
                 <li class="waves-effect waves-light btn">
                     <div class="div-option"><img class="icono-silueta" src="img/index/cart.png"></div>
-                    <p>Carrito</p></li>
-            </ul>
-
-            <ul id="dropdown-1" class="dropdown-content">
-                <li><input type="text"></li>
-                <li><input type="text"></li>
+                    <a href="cart.html"><p>Carrito</p></a></li>
             </ul>
         </div>
     </nav>

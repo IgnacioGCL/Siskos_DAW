@@ -5,6 +5,7 @@
     <title>Serigrafía</title>
     <link rel="stylesheet" href="assets/css/style_serigraphy.css">
     <link rel="stylesheet" href="assets/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/hover-min.css">
 </head>
 <body>
 <!--Preloader -->
@@ -28,61 +29,86 @@
 <header>
     <nav>
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
-            <ul class="right">
-                <li class="waves-effect waves-yellow dropdown-button btn" data-beloworigin="true"
-                    data-activates='dropdown-1'>
-                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
-                    <p>Servicio</p></li>
-                <li class="waves-effect waves-yellow btn">
-                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
-                    <p>Crear cuenta</p></li>
-                <li class="waves-effect waves-yellow btn">
-                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
-                    <p>Login</p></li>
-                <li class="waves-effect waves-yellow btn">
-                    <div class="div-option"><img class="icono-silueta" src="img/serigraphy/cart.png"></div>
-                    <p>Carrito</p></li>
-            </ul>
-
-            <ul id="dropdown-1" class="dropdown-content">
-                <li><input type="text"></li>
-                <li><input type="text"></li>
-            </ul>
+            <div class="row">
+                <div class="col l3 m3 s3">
+                    <a href="index.html" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
+                </div>
+                <div class="col l9 m9 s9">
+                    <ul id="items-menu" class="right">
+                        <li class="waves-effect waves-yellow btn" style="width: 17%; margin-left: 160px; !important;">
+                            <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
+                            <p>Servicio</p>
+                            <ul id="dropdown3">
+                                <li><a href="index.html">Principal</a></li>
+                                <li><a>Sublimación</a></li>
+                                <li><a>Impr.Digital</a></li>
+                                <li><a>Tampografía</a></li>
+                                <li><a>Bordados</a></li>
+                                <br>
+                                <li><a>Laser</a></li>
+                            </ul>
+                        </li>
+                        <li id="register" class="waves-effect waves-yellow btn" style="width: 22%">
+                            <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
+                            <p>Crear cuenta</p><br>
+                            <ul id="dropdown1">
+                                <input type="text" placeholder="Nombre" id="nombre">
+                                <input type="text" placeholder="Apellidos" id="apellidos">
+                                <input type="email" placeholder="Correo" id="correo-registro">
+                                <input type="password" placeholder="Contraseña" id="password-registro">
+                                <button id="button-register" class="btn center-align">Registrar</button>
+                            </ul>
+                        </li>
+                        <li id="login" class="waves-effect waves-yellow btn" style="width: 18%">
+                            <div class="div-option"><img class="icono-silueta" src="img/serigraphy/silueta.png"></div>
+                            <p>Login</p><br>
+                            <ul id="dropdown2">
+                                <input type="email" placeholder="Correo" id="correo-login">
+                                <input type="password" placeholder="Contraseña" id="password-login">
+                                <button id="button-login" class="btn center-align">Entrar</button>
+                            </ul>
+                        </li>
+                        <li class="waves-effect waves-yellow btn">
+                            <div class="div-option"><img class="icono-silueta" src="img/serigraphy/cart.png"></div>
+                            <p>Carrito</p></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
 </header>
 <!--Fin barra de navegación-->
 <section id="content">
     <div class="myContainer">
-        <div class="row">
+        <div class="row" style="min-height: 600px">
             <!--En pantallas medias o superiores-->
             <form action="#">
                 <div class="col l8 m8 custom-button-div">
-                    <a href="#" class="custom-button btn">PERSONALICE SU DISEÑO</a>
+                    <a href="#" class="waves-effect waves-light custom-button btn hvr-forward">PERSONALICE SU DISEÑO</a>
                 </div>
                 <div class="col l7 m7 offset-l1 serigraphy-prev-med-and-up hide-on-small-and-down">
+                    <a class="close-button btn">X</a>
                     <p>Previsualizador</p>
                     <div class="row prev-up">
                         <div class="col l3 m3 vertical-align">
                             <p class="prev-colors">COLOR CAMISETA</p>
                             <div class="row prev-colors">
-                                <div class="col s1 choose-color-1"></div>
-                                <div class="col s1 choose-color-2"></div>
-                                <div class="col s1 choose-color-3"></div>
-                                <div class="col s1 choose-color-4"></div>
-                                <div class="col s1 choose-color-5"></div>
-                                <div class="col s1 choose-color-6"></div>
-                                <div class="col s1 choose-color-7"></div>
+                                <div class="col l1 m1 s1 choose-color-1"></div>
+                                <div class="col l1 m1 s1 choose-color-2"></div>
+                                <div class="col l1 m1 s1 choose-color-3"></div>
+                                <div class="col l1 m1 s1 choose-color-4"></div>
+                                <div class="col l1 m1 s1 choose-color-5"></div>
+                                <div class="col l1 m1 s1 choose-color-6"></div>
+                                <div class="col l1 m1 s1 choose-color-7"></div>
                             </div>
                             <div class="row prev-colors">
-                                <div class="col s1 choose-color-8"></div>
-                                <div class="col s1 choose-color-9"></div>
-                                <div class="col s1 choose-color-10"></div>
-                                <div class="col s1 choose-color-11"></div>
-                                <div class="col s1 choose-color-12"></div>
-                                <div class="col s1 choose-color-13"></div>
-                                <div class="col s1 choose-color-14"></div>
+                                <div class="col l1 m1 s1 choose-color-8"></div>
+                                <div class="col l1 m1 s1 choose-color-9"></div>
+                                <div class="col l1 m1 s1 choose-color-10"></div>
+                                <div class="col l1 m1 s1 choose-color-11"></div>
+                                <div class="col l1 m1 s1 choose-color-12"></div>
+                                <div class="col l1 m1 s1 choose-color-13"></div>
+                                <div class="col l1 m1 s1 choose-color-14"></div>
                             </div>
                         </div>
                         <div class="col l3 m3 vertical-align">
@@ -252,14 +278,13 @@
                                 <textarea cols="30" rows="10"></textarea>
                             </div>
                             <div class="col l4 s4">
-                                <p class="center">CANTIDAD</p>
-                                <p class="center">
-                                    <input type="checkbox" id="cantidad">
-                                    <label for="cantidad"></label>
-                                </p>
+                                <div class="input-field">
+                                    <input id="cantidad" type="text" class="validate">
+                                    <label for="cantidad">CANTIDAD</label>
+                                </div>
                             </div>
                             <div class="col l4 s4 done-button">
-                                <a href="#" class="btn">SUBIR A CARRITO</a>
+                                <a href="cart.html" class="btn">SUBIR A CARRITO</a>
                             </div>
                         </div>
                     </div>
@@ -270,7 +295,7 @@
                 <div class="serigraphy-title-wrapper"><p class="serigraphy-title-1">Serigrafía</p></div>
                 <div class="serigraphy-title-wrapper-1"><p class="serigraphy-title-2">Siskos</p></div>
                 <div class="serigraphy-subtitle"><p>serigrafía</p></div>
-                <div class="serigraphy-text"><p>Adaptación de su diseño para poder ser impreso sobre prendas
+                <div class="serigraphy-text"><p style="text-align: center">Adaptación de su diseño para poder ser impreso sobre prendas
                     textiles o
                     cualquier otra superficie plana. Blanco, negro y/o color. Diferentes tipos de tintas</p></div>
             </div>

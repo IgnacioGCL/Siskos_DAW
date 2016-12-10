@@ -11,61 +11,123 @@
 
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="index.html" class="brand-logo"><img src="images/texto%20siskos.png" alt=""></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="login.html"><i class="fa fa-user"></i>LOGIN</a></li>
-                    <li><a href="register.html"><i class="fa fa-user"></i>CREAR CUENTA</a></li>
-                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>SERVICIOS</a></li>
-                </ul>
+<!--Preloader -->
+<div class="preloader-background">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
             </div>
-        </nav>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    </header>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"><img class="siskos-logo" src="img/siskos.png"></a>
+            <ul id="items-menu" class="right ">
+                <li class="waves-effect waves-teal btn">
+                    <div class="div-option"><img class="icono-silueta" src="img/index/silueta.png"></div>
+                    <p>Servicio</p>
+                    <ul id="dropdown3" >
+                        <li><a href="serigraphy.html">Serigrafía</a></li>
+                        <li><a>Sublimación</a></li>
+                        <li><a>Impr.Digital</a></li>
+                        <li><a>Tampografía</a></li>
+                        <li><a>Bordados</a></li><br>
+                        <li><a>Laser</a></li>
+                    </ul>
+                </li>
+                <li id="register" class="waves-effect waves-teal btn" >
+                    <div class="div-option"><img class="icono-silueta" src="img/index/silueta.png"></div>
+                    <p>Crear cuenta</p><br>
+                    <ul id="dropdown1" >
+                        <input type="text" placeholder="Nombre" id="nombre">
+                        <input type="text" placeholder="Apellidos" id="apellidos">
+                        <input type="email" placeholder="Correo" id="correo-registro">
+                        <input type="password" placeholder="Contraseña" id="password-registro">
+                        <button  id="button-register"  class="btn center-align">Registrar</button>
+                    </ul>
+                </li>
+                <li id="login" class="waves-effect waves-light btn">
+                    <div class="div-option"><img class="icono-silueta" src="img/index/silueta.png"></div>
+                    <p>Login</p><br>
+                    <ul id="dropdown2" >
+                        <input type="email" placeholder="Correo" id="correo-login">
+                        <input type="password" placeholder="Contraseña" id="password-login">
+                        <button  id="button-login"  class="btn center-align">Entrar</button>
+                    </ul>
+                </li>
 
-    <section id="content" class="row">
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<section id="cart-content" class="row">
+    <h2 id="title-cart">Cesta</h2>
+    <div class="row">
+        <ul id="cart-products" class="col s8">
+
+        </ul>
+        <div id="subtotal-cart" class="col s4">
+            <h2 >Subtotal</h2>
+            <div id="panel-subtotal" class="col s6" >
+                <p id="total-products"></p>
+                <p id="total"></p>
+                <span id="impuestos" class="row col s12 center-align">( 7% IGIC incluido )</span>
+                <button id="btn-enviar" class="btn hvr-grow-shadow">Enviar pedido</button>
+            </div>
+
+        </div>
+    </div>
 
 
-    </section>
-    <section id="footer">
-        <footer >
+</section>
+<section id="footer">
+    <footer >
+        <div class="container">
+            <ul id="enlaces" class="row ">
+                <li class="col s2 offset-s3">CONTACTO</li>
+                <li class="col s2">NUESTRO TRABAJO</li>
+                <li class="col s2">COMPAÑIA</li>
+            </ul>
+            <ul id="logos-social" class="row">
+                <li class="col s2 offset-s3 "><img src="img/index/facebook-logo.png" alt=""></li>
+                <li class="col s2 " ><img src="img/index/youtube-logo.png" alt=""></li>
+                <li class="col s2"><img src="img/index/pinterest-logo.png" alt=""></li>
+            </ul>
+            <div id="phone-contact" class="row center-align">
+                <p>678555555</p>
+            </div>
+            <div id="email-contact" class="row center-align">
+                <p>siskoscorreo@gmail.com</p>
+            </div>
+            <div class="line-white row col s8 offset-s4">
+                <hr>
+            </div>
+            <div id="address-contact" class="row center-align">
+                <p>C/Pérez Nº2, Botswana</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-                <ul id="enlaces" class="row ">
-                    <li class="col s2 offset-s3">CONTACTO</li>
-                    <li class="col s2">NUESTRO TRABAJO</li>
-                    <li class="col s2">COMPAÑIA</li>
-                </ul>
-                <ul id="logos-social" class="row">
-                    <li class="col s2 offset-s3 "><img src="img/index/facebook-logo.png" alt=""></li>
-                    <li class="col s2 " ><img src="img/index/youtube-logo.png" alt=""></li>
-                    <li class="col s2"><img src="img/index/pinterest-logo.png" alt=""></li>
-                </ul>
-                <div id="phone-contact" class="row center-align">
-                    <p>678555555</p>
-                </div>
-                <div id="email-contact" class="row center-align">
-                    <p>siskoscorreo@gmail.com</p>
-                </div>
-                <div class="line-white row col s8 offset-s4">
-                    <hr>
-                </div>
-                <div id="address-contact" class="row center-align">
-                    <p>C/Pérez Nº2, Botswana</p>
-                </div>
+                © 2016 Copyright
             </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    © 2016 Copyright
-                </div>
-            </div>
+        </div>
 
-        </footer>
+    </footer>
 
-    </section>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/script_index.js"></script>
+</section>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/script_index.js"></script>
 
 </body>
 </html>

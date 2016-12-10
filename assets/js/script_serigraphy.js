@@ -27,3 +27,9 @@ $('.custom-button').click(function () {
     $('.custom-button-div').hide();
     $('.serigraphy-prev-med-and-up').show('slow');
 });
+
+$('.close-button').click(function () {
+    $('.serigraphy-prev-med-and-up').hide('slow', function(){
+        $('.custom-button-div').show('slow');
+    });
+});

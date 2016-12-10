@@ -16,6 +16,7 @@ body {
   margin: 0;
   height: 100%; }
 
+/* START STYLE HEADER "INDEX" "CART" */
 nav {
   background-color: #04c5da !important;
   height: 70px !important; }
@@ -24,15 +25,62 @@ nav {
   height: 60px;
   margin-left: 70px; }
 
+#items-menu {
+  position: absolute;
+  right: 0; }
+
+#login {
+  width: 180px !important; }
+
 .nav-wrapper ul li {
   border-radius: 5px !important;
   background-color: #ffffff !important;
   color: #04c5da;
   margin-top: 15px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  width: auto;
+  max-width: 250px; }
+  .nav-wrapper ul li a {
+    color: #04c5da;
+    float: left; }
+    .nav-wrapper ul li a:hover {
+      background-color: white !important; }
   .nav-wrapper ul li p {
     margin: 0;
     float: inherit; }
+  .nav-wrapper ul li:hover {
+    background-color: white !important;
+    height: 100%; }
+  .nav-wrapper ul li #dropdown1, .nav-wrapper ul li #dropdown2 {
+    background-color: white !important;
+    z-index: 10;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height  1s ease; }
+    .nav-wrapper ul li #dropdown1 input, .nav-wrapper ul li #dropdown2 input {
+      border: 1px #04c5da solid;
+      border-radius: 4px;
+      margin: 1px 0px; }
+    .nav-wrapper ul li #dropdown1 button, .nav-wrapper ul li #dropdown2 button {
+      background-color: #04c5da !important;
+      color: white;
+      margin-bottom: 8px; }
+
+#dropdown3 {
+  margin-top: 40px; }
+  #dropdown3 li {
+    float: left;
+    width: 100%;
+    border: 1px #04c5da solid;
+    border-radius: 0px !important;
+    margin-bottom: 10px; }
+    #dropdown3 li a {
+      color: #04c5da;
+      width: 100%; }
+      #dropdown3 li a:hover {
+        color: white;
+        background-color: #04c5da !important; }
 
 .div-option {
   height: 36px;
@@ -45,6 +93,8 @@ nav {
   margin-top: 6px;
   color: #04c5da !important; }
 
+/* END HEADER*/
+/* START STYLE CONTENT "INDEX"  */
 #content {
   width: 100%;
   margin-top: 4px;
@@ -102,6 +152,8 @@ nav {
         position: relative;
         float: right; }
 
+/*END STYLE CONTENT INDEX*/
+/* START FOOTER HEADER "INDEX" "CART" */
 footer {
   margin-top: 0 !important;
   background-color: #2308d0 !important;
@@ -116,8 +168,82 @@ footer {
     footer .container li img {
       width: 32px; }
 
+/*END FOOTER*/
 .line-white {
   background-color: white;
   height: 1px; }
+
+/* START STYLE CONTENT  "CART" */
+#cart-content {
+  width: 100%;
+  margin-top: 4px;
+  background-image: url(../../img/index/fondo_index.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  margin-bottom: 0;
+  min-height: 700px; }
+  #cart-content #title-cart {
+    color: white;
+    margin-left: 10%;
+    padding-top: 15px;
+    font-size: 30px;
+    margin-top: 0; }
+  #cart-content #cart-products li {
+    margin-left: 25px;
+    float: left;
+    width: 100%; }
+    #cart-content #cart-products li .img-product {
+      background-color: rgba(255, 255, 255, 0.4);
+      height: 100px;
+      width: 100px; }
+    #cart-content #cart-products li .description-product {
+      background-color: rgba(255, 255, 255, 0.4);
+      height: 100px;
+      margin-left: 15px; }
+    #cart-content #cart-products li p {
+      margin: 0;
+      margin-top: 0px;
+      text-align: center;
+      color: white; }
+    #cart-content #cart-products li .price-product, #cart-content #cart-products li .amount-product {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.4);
+      height: 30px;
+      color: black; }
+    #cart-content #cart-products li .amount-price {
+      margin-top: -20px; }
+  #cart-content #cart-products .btn-del {
+    float: left;
+    background-color: transparent !important;
+    box-shadow: none;
+    color: white;
+    border: none;
+    margin-left: 25px;
+    margin-bottom: 20px; }
+  #cart-content #subtotal-cart {
+    margin-top: -20px; }
+    #cart-content #subtotal-cart h2 {
+      margin: 0px 70px;
+      color: white;
+      font-size: 18px; }
+    #cart-content #subtotal-cart #panel-subtotal {
+      height: 200px;
+      background-color: rgba(255, 255, 255, 0.4); }
+      #cart-content #subtotal-cart #panel-subtotal p {
+        text-align: center; }
+      #cart-content #subtotal-cart #panel-subtotal #total {
+        font-size: 38px;
+        margin: 4px; }
+      #cart-content #subtotal-cart #panel-subtotal #total-products {
+        font-size: 20px; }
+      #cart-content #subtotal-cart #panel-subtotal #btn-enviar {
+        height: 20px;
+        margin-top: 50px;
+        line-height: 0px;
+        background-color: white;
+        color: #04c5da; }
 
 /*# sourceMappingURL=style_index.css.map */

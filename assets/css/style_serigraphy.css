@@ -20,6 +20,63 @@ nav {
   background-color: #fecc00 !important;
   height: 70px !important; }
 
+#items-menu {
+  position: absolute;
+  right: 0; }
+
+#login {
+  width: 180px !important; }
+
+.nav-wrapper ul li {
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+  color: #fecc00;
+  margin-top: 15px;
+  margin-right: 20px;
+  width: auto;
+  max-width: 250px; }
+  .nav-wrapper ul li a {
+    color: #fecc00;
+    float: left; }
+    .nav-wrapper ul li a:hover {
+      background-color: white !important; }
+  .nav-wrapper ul li p {
+    margin: 0;
+    float: inherit; }
+  .nav-wrapper ul li:hover {
+    background-color: white !important;
+    height: 100%; }
+  .nav-wrapper ul li #dropdown1, .nav-wrapper ul li #dropdown2 {
+    background-color: white !important;
+    z-index: 10;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height  1s ease; }
+    .nav-wrapper ul li #dropdown1 input, .nav-wrapper ul li #dropdown2 input {
+      border: 1px #fecc00 solid;
+      border-radius: 4px;
+      margin: 1px 0px; }
+    .nav-wrapper ul li #dropdown1 button, .nav-wrapper ul li #dropdown2 button {
+      background-color: #fecc00 !important;
+      color: white;
+      margin-bottom: 8px; }
+
+#dropdown3 {
+  margin-top: 40px; }
+  #dropdown3 li {
+    float: left;
+    width: 100%;
+    border: 1px #fecc00 solid;
+    border-radius: 0px !important;
+    margin-bottom: 10px; }
+    #dropdown3 li a {
+      color: #fecc00;
+      width: 100%; }
+      #dropdown3 li a:hover {
+        color: white;
+        background-color: #fecc00 !important; }
+
 .siskos-logo {
   height: 60px;
   margin-left: 70px; }
@@ -54,8 +111,16 @@ nav {
   width: 100%;
   height: 100%; }
 
+.close-button {
+  margin-top: 5px;
+  border-radius: 20px;
+  position: inherit !important; }
+
 .serigraphy-text-container {
-  background-color: rgba(255, 255, 255, 0.6); }
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  right: 0 !important;
+  padding-bottom: 20px; }
   .serigraphy-text-container p {
     font-family: "siskos";
     margin: 0; }
@@ -149,100 +214,86 @@ nav {
 .choose-color-1 {
   background-color: purple !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-2 {
   background-color: blue !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-3 {
   background-color: yellow !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-4 {
   background-color: orange !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-5 {
   background-color: red !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-6 {
   background-color: green !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-7 {
   background-color: aqua !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-8 {
   background-color: black !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-9 {
   background-color: white !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-10 {
   background-color: grey !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-11 {
   background-color: pink !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-12 {
   background-color: brown !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-13 {
   background-color: violet !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .choose-color-14 {
   background-color: blue !important;
   height: 20px;
-  width: 20px;
-  border: solid 1px #000000;
-  margin-right: 5px; }
+  width: 10px;
+  border: solid 1px #000000; }
 
 .frente-with-line {
   display: inline-block; }
