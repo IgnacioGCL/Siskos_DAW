@@ -22,7 +22,7 @@ $('#upload-file').change(function () {
     reader.onloadend = function () {
         $('.div-image').css('background-image', 'url("' + reader.result + '")');
         $('.div-image').css('background-color', 'rgba(0,0,0,0)');
-        canvas(reader.result, "default");
+        canvas(reader.result, "front");
     }
     if (file) {
         reader.readAsDataURL(file);
@@ -69,12 +69,6 @@ $('#trasera').change(function () {
 function canvas(image, option) {
 
     switch(option){
-        case "default":
-            fabric.Image.fromURL(image, function(img) {
-                img.scale(0.08);
-                canvasFront.add(img).setActiveObject(img);
-            });
-            break;
         case "front":
             fabric.Image.fromURL(image, function(img) {
                 img.scale(0.08);
