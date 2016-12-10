@@ -11,8 +11,12 @@ var file;
 var reader;
 var canvasFront;
 var canvasBack;
+var zero = 0;
 
 $('#upload-file').change(function () {
+    canvasFront.clear().renderAll();
+    canvasBack.clear().renderAll();
+    $('#trasera').prop("checked",false);
     file = this.files[0];
     reader = new FileReader();
     reader.onloadend = function () {
@@ -31,6 +35,13 @@ $('.serigraphy-prev-med-and-up').hide();
 $('.custom-button').click(function () {
     $('.custom-button-div').hide();
     $('.serigraphy-prev-med-and-up').show('slow');
+    if(zero==0){
+        canvasFront = this.__canvas = new fabric.Canvas('canvas-front');
+        fabric.Object.prototype.transparentCorners = false;
+        canvasBack = this.__canvas = new fabric.Canvas('canvas-back');
+        fabric.Object.prototype.transparentCorners = false;
+        zero++;
+    }
 });
 
 $('.close-button').click(function () {
@@ -59,27 +70,18 @@ function canvas(image, option) {
 
     switch(option){
         case "default":
-            canvasFront = this.__canvas = new fabric.Canvas('canvas-front');
-            fabric.Object.prototype.transparentCorners = false;
-
             fabric.Image.fromURL(image, function(img) {
                 img.scale(0.08);
                 canvasFront.add(img).setActiveObject(img);
             });
             break;
         case "front":
-            canvasFront = this.__canvas = new fabric.Canvas('canvas-front');
-            fabric.Object.prototype.transparentCorners = false;
-
             fabric.Image.fromURL(image, function(img) {
                 img.scale(0.08);
                 canvasFront.add(img).setActiveObject(img);
             });
             break;
         case "back":
-            canvasBack = this.__canvas = new fabric.Canvas('canvas-back');
-            fabric.Object.prototype.transparentCorners = false;
-
             fabric.Image.fromURL(image, function(img) {
                 img.scale(0.08);
                 canvasBack.add(img).setActiveObject(img);
