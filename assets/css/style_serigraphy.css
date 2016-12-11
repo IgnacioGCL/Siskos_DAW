@@ -15,7 +15,7 @@
   right: 0;
   bottom: 0; }
 
-/*------------------Barra de navegación------------------*/
+/*------------------Barra de navegaci├│n------------------*/
 nav {
   background-color: #fecc00 !important;
   height: 70px !important; }
@@ -393,5 +393,9 @@ footer {
 .line-white {
   background-color: white;
   height: 1px; }
+
+canvas {
+  width: 200px;
+  height: 200px; }
 
 /*# sourceMappingURL=style_serigraphy.css.map */
