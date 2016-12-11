@@ -79,7 +79,7 @@ function canvas(image, option) {
         case "back":
             fabric.Image.fromURL(image, function(img) {
                 img.scale(0.08);
-                img.set({width:100,height:100});
+                img.set({width:500,height:500});
                 canvasBack.add(img).setActiveObject(img);
             });
 
