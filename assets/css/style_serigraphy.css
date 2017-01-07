@@ -15,7 +15,7 @@
   right: 0;
   bottom: 0; }
 
-/*------------------Barra de navegaci├│n------------------*/
+/*------------------Barra de navegación------------------*/
 nav {
   background-color: #fecc00 !important;
   height: 70px !important; }
@@ -211,89 +211,103 @@ nav {
   height: 90px;
   width: 100%; }
 
-.choose-color-1 {
-  background-color: purple !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-1 [type="checkbox"] + label:before {
+  background-color: purple !important; }
+.choose-color-1 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-2 {
-  background-color: blue !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-2 [type="checkbox"] + label:before {
+  background-color: blue !important; }
+.choose-color-2 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-3 {
-  background-color: yellow !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-3 [type="checkbox"] + label:before {
+  background-color: yellow !important; }
+.choose-color-3 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-4 {
-  background-color: orange !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-4 [type="checkbox"] + label:before {
+  background-color: orange !important; }
+.choose-color-4 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-5 {
-  background-color: red !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-5 [type="checkbox"] + label:before {
+  background-color: red !important; }
+.choose-color-5 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-6 {
-  background-color: green !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-6 [type="checkbox"] + label:before {
+  background-color: green !important; }
+.choose-color-6 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-7 {
-  background-color: aqua !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-7 [type="checkbox"] + label:before {
+  background-color: aqua !important; }
+.choose-color-7 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-8 {
-  background-color: black !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-8 [type="checkbox"] + label:before {
+  background-color: black !important; }
+.choose-color-8 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-9 {
-  background-color: white !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-9 [type="checkbox"] + label:before {
+  background-color: white !important; }
+.choose-color-9 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-10 {
-  background-color: grey !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-10 [type="checkbox"] + label:before {
+  background-color: grey !important; }
+.choose-color-10 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-11 {
-  background-color: pink !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-11 [type="checkbox"] + label:before {
+  background-color: pink !important; }
+.choose-color-11 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-12 {
-  background-color: brown !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-12 [type="checkbox"] + label:before {
+  background-color: brown !important; }
+.choose-color-12 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-13 {
-  background-color: violet !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-13 [type="checkbox"] + label:before {
+  background-color: violet !important; }
+.choose-color-13 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
-.choose-color-14 {
-  background-color: blue !important;
-  height: 20px;
-  width: 10px;
-  border: solid 1px #000000; }
+.choose-color-14 [type="checkbox"] + label:before {
+  background-color: deepskyblue !important; }
+.choose-color-14 [type="checkbox"]:checked + label:before {
+  background-color: transparent !important;
+  border-right: 2px solid #ffffff !important;
+  border-bottom: 2px solid #ffffff !important; }
 
 .frente-with-line {
   display: inline-block; }
@@ -407,7 +421,7 @@ canvas {
 
 .zoom:hover {
   /* tranformamos el elemento al pasar el mouse por encima al doble de
-     su tama├▒o con scale(2). */
+     su tamaño con scale(2). */
   transform: scale(2);
   -moz-transform: scale(2);
   /* Firefox */

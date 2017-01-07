@@ -13,6 +13,96 @@ var canvasFront;
 var canvasBack;
 var zero = 0;
 
+$('input[name=groupColorShirt]').on('change', function(){
+    if(this.checked){
+        switch(this.id){
+            case 'purple': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'blue': $('#purple, #yellow, #orange, #red, #green, #aqua, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'yellow': $('#blue, #purple, #orange, #red, #green, #aqua, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'orange': $('#blue, #yellow, #purple, #red, #green, #aqua, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'red': $('#blue, #yellow, #orange, #purple, #green, #aqua, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'green': $('#blue, #yellow, #orange, #red, #purple, #aqua, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'aqua': $('#blue, #yellow, #orange, #red, #green, #purple, #black, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'black': $('#blue, #yellow, #orange, #red, #green, #aqua, #purple, #white, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'white': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #purple, #grey, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'grey': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #white, #purple, #pink, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'pink': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #white, #grey, #purple, #brown, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'brown': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #white, #grey, #pink, #purple, #violet, #deepskyblue').prop('checked', false);
+                break;
+            case 'violet': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #white, #grey, #pink, #brown, #purple, #deepskyblue').prop('checked', false);
+                break;
+            case 'deepskyblue': $('#blue, #yellow, #orange, #red, #green, #aqua, #black, #white, #grey, #pink, #brown, #violet, #purple').prop('checked', false);
+                break;
+            default: console.log("Not working");
+                break;
+        }
+    }
+});
+
+$('input[name=groupSize]').on('change', function(){
+    if(this.checked){
+        switch(this.id){
+            case 's': $('#m, #l, #xl, #xxl').prop('checked', false);
+                break;
+            case 'm': $('#s, #l, #xl, #xxl').prop('checked', false);
+                break;
+            case 'l': $('#m, #s, #xl, #xxl').prop('checked', false);
+                break;
+            case 'xl': $('#m, #l, #s, #xxl').prop('checked', false);
+                break;
+            case 'xxl': $('#m, #l, #xl, #s').prop('checked', false);
+                break;
+            default: console.log("Not working");
+                break;
+        }
+    }
+});
+
+$('input[name=groupType]').on('change', function(){
+    if(this.checked){
+        switch(this.id){
+            case 'hombre': $('#mujer, #niño').prop('checked', false);
+                break;
+            case 'mujer': $('#hombre, #niño').prop('checked', false);
+                break;
+            case 'niño': $('#hombre, #mujer').prop('checked', false);
+                break;
+            default: console.log("Not working");
+                break;
+        }
+    }
+});
+
+$('input[name=groupColorNumb]').on('change', function(){
+    if(this.checked){
+        switch(this.id){
+            case '1-color': $('#2-color, #3-color, #4-color, #5-color').prop('checked', false);
+                break;
+            case '2-color': $('#1-color, #3-color, #4-color, #5-color').prop('checked', false);
+                break;
+            case '3-color': $('#2-color, #1-color, #4-color, #5-color').prop('checked', false);
+                break;
+            case '4-color': $('#2-color, #3-color, #1-color, #5-color').prop('checked', false);
+                break;
+            case '5-color': $('#2-color, #3-color, #4-color, #1-color').prop('checked', false);
+                break;
+            default: console.log("Not working");
+                break;
+        }
+    }
+});
+
 $('#upload-file').change(function () {
     canvasFront.clear().renderAll();
     canvasBack.clear().renderAll();
@@ -93,5 +183,4 @@ function canvas(image, option) {
             canvasBack.clear().renderAll();
             break;
     }
-
 };
